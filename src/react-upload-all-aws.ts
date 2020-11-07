@@ -17,8 +17,12 @@ class ReactS3Client {
   ): Promise<UploadResponse> {
     throwError(this.config, file);
 
+    var re = "[^.]+$";
+
     const fd = new FormData();
-    const fileExtension = file.name.match("[^.]+$");
+    const fileExtension: string = file.name.substr(
+      file.name.lastIndexOf(".") + 1
+    );
     const fileName: string = `${
       newFileName || shortId.generate()
     }.${fileExtension}`;
