@@ -1,6 +1,6 @@
 {
   "name": "react-upload-all-aws",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This package allows you to upload any file you want to AWS S3",
   "main": "react-upload-aws.js",
   "scripts": {
