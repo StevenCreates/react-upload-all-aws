@@ -1,14 +1,32 @@
 {
   "name": "react-upload-all-aws",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This package allows you to upload any file you want to AWS S3",
-  "main": "react-upload-aws.js",
+  "main": "dist/react-upload-all-aws.js",
+  "module": "dist/react-upload-all-aws.m.js",
+  "source": "src/react-upload-all-aws.ts",
+  "umd:main": "dist/react-upload-all-aws.umd.js",
+  "unpkg": "dist/react-upload-all-aws.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "microbundle",
+    "clean": "rm -rf dist",
+    "dev": "microbundle --ts watch",
+    "tslint": "tslint -c tslint.json 'src/**/*.ts'",
+    "prepublish": "npm run clean && npm run build"
   },
+  "files": [
+    "cjs",
+    "esm",
+    "umd"
+  ],
   "dependencies": {
     "crypto-js": "^3.1.9-1",
     "short-uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^3.1.43",
+    "microbundle": "^0.9.0",
+    "typescript": "^3.2.4"
   },
   "repository": {
     "type": "git",
