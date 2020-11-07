@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "short-uuid": "^3.1.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/StevenCreates/react-upload-all-aws.git"
