@@ -1,0 +1,26 @@
+{
+  "name": "react-upload-all-aws",
+  "version": "1.0.0",
+  "description": "This package allows you to upload any file you want to AWS S3",
+  "main": "react-upload-aws.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StevenCreates/react-upload-all-aws.git"
+  },
+  "keywords": [
+    "react",
+    "aws",
+    "s3",
+    "awss3",
+    "upload"
+  ],
+  "author": "steven@stevencreates.tech",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StevenCreates/react-upload-all-aws/issues"
+  },
+  "homepage": "https://github.com/StevenCreates/react-upload-all-aws#readme"
+}
